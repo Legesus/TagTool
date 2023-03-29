@@ -180,7 +180,7 @@ class Webview {
 
 function activate(context) {
 let globalStorage = {}
-console.log("<coroutine object on_activate at 0x000001DE56603370>");
+console.log("The Extension 'TestTool' has started");
 let helloWorld = vscode.commands.registerCommand('TestTool.helloWorld',async function () {
 let funcName = "hello_world"; let pyVar = "python";
         let py = spawn(pyVar, [pythonPath, funcName]);
