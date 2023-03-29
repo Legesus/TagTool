@@ -9,6 +9,6 @@ def on_activate():
 
 @ext.command()
 def hello_world():
-    return vscode.window.show.info.message(f"Hello World from {ext.name}")
+    return vscode.window.show_info_message(f"Hello World from {ext.name}")
 
 vscode.build(ext)
