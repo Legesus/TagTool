@@ -1,3 +1,6 @@
+# Built using vscode-ext
+
+import sys
 import vscode
 
 ext = vscode.Extension(name="TestTool", display_name="Test Tool", version="0.1.0")
@@ -11,4 +14,9 @@ async def on_activate():
 async def hello_world(ctx):
     return vscode.window.show.info.message(f"Hello World from {ext.name}")
 
-vscode.build(ext)
+
+
+def ipc_main():
+    globals()[sys.argv[1]]()
+
+ipc_main()

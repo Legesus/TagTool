@@ -1,0 +1,27 @@
+{
+  "name": "TestTool",
+  "displayName": "Test Tool",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./build/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "TestTool.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "configuration": {
+      "title": "Test Tool",
+      "properties": {}
+    }
+  },
+  "activationEvents": [
+    "onCommand:TestTool.helloWorld"
+  ]
+}
