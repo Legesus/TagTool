@@ -24,7 +24,7 @@
   "snippets": [
     {
       "language": "python",
-      "path": "./TestTool.code-snippets"
+      "path": "./TestToolSnippets.json"
     }
   ],
   "activationEvents": [
