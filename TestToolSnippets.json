@@ -1,9 +1,0 @@
-{
-    "myPythonSnippet": {
-        "prefix": "myPythonSnippet",
-        "body": [
-            "console.log(\"Hello, world!\");"
-        ],
-        "description": "My custom snippet"
-    }
-}

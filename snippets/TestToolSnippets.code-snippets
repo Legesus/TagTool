@@ -1,0 +1,9 @@
+{
+    "Tagging Tags": {
+        "prefix": "!xmlTag",
+        "body": [
+            "Hello"
+        ],
+        "description": "My custom snippet"
+    }
+}

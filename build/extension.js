@@ -197,6 +197,22 @@ let funcName = "hello_world"; let pyVar = "python";
         });
         });
 context.subscriptions.push(helloWorld);
+let parsePdfsToXml = vscode.commands.registerCommand('TestTool.parsePdfsToXml',async function () {
+let funcName = "parse_pdfs_to_xml"; let pyVar = "python";
+        let py = spawn(pyVar, [pythonPath, funcName]);
+
+        py.stdout.on("data", (data) => {
+            try {
+            executeCommands(py, data, globalStorage);
+            } catch (e) {
+            console.error(e);
+            }
+        });
+        py.stderr.on("data", (data) => {
+            console.error(`An Error occurred in the python script: ${data}`);
+        });
+        });
+context.subscriptions.push(parsePdfsToXml);
 }
 
 function deactivate() {}

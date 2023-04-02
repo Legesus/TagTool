@@ -10,14 +10,16 @@
   ],
   "main": "./build/extension.js",
   "contributes": {
+    "snippets": [
+      {
+        "language": "xml",
+        "path": "./snippets/TestToolSnippets.code-snippets"
+      }
+    ],
     "commands": [
       {
         "command": "TestTool.helloWorld",
         "title": "Hello World"
-      },
-      {
-        "command": "TestTool.parsePdfsToXml",
-        "title": "Pdf2XML"
       }
     ],
     "configuration": {
@@ -26,7 +28,6 @@
     }
   },
   "activationEvents": [
-    "onCommand:TestTool.helloWorld",
-    "onCommand:TestTool.parsePdfsToXml"
+    "onCommand:TestTool.helloWorld"
   ]
 }
