@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 
 def parse_pdf_to_xml(pdf_path):
     # Create a PDF reader object
+    print("Hello this is pdf2xml.py")
     with open(pdf_path, 'rb') as pdf_file:
         pdf_reader = PyPDF2.PdfReader(pdf_file)
         # Create an ElementTree object to hold the XML data
